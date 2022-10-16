@@ -15,6 +15,7 @@
 body{
     background: var(--lilas);
     background-image: url('imagens/bg-desktop.svg');
+    background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -90,11 +91,12 @@ footer img{
 }
 
 
-@media (max-width:600px){
+@media (max-width:800px){
     body{
         background: var(--lilas);
         background-image: url('imagens/bg-mobile.svg');
         background-repeat: no-repeat;
+        background-attachment: fixed;
         background-size: cover;
     }
     header img{
@@ -114,6 +116,12 @@ footer img{
     .content img{
         max-width: 89vw;
     }
+    .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .text h1{
         font-family: 'Poppins';
         color: white;
@@ -132,21 +140,20 @@ footer img{
         margin: 12px auto 12px auto;
     }
     button{
+        text-align: center;
         width: 13rem;
         padding: 1rem;
+        margin: 12px auto;
         border-radius: 1.8rem;
         box-shadow: 0.1rem 0.4rem 0.2rem rgba(0, 0, 0, 0.445);
-        margin: 0 4rem;
         font-family: 'Open Sans';
         font-size: 0.9rem;
-        align-items: center;
     }
     footer{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    
     footer img{
         width: 1.7rem;
     }
